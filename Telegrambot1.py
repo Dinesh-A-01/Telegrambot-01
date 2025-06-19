@@ -3,6 +3,10 @@ import re
 import time
 from datetime import datetime
 import pytz
+import os
+
+BOT_TOKEN = os.getenv('BOT_TOKEN')
+CHAT_ID = os.getenv('CHAT_ID')
 
 # === SETTINGS ===
 THRESHOLDS = [82.33, 81.50, 85.32]  # Set your desired alert levels
